@@ -15,7 +15,12 @@ let actors;
 const apiKey = "c432dbd8";
 
 button.addEventListener("click", function (name) {
-  fetch("http://www.omdbapi.com/?t=" + search.value + "&apikey=" + apiKey)
+  fetch(
+    "https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=" +
+      search.value +
+      "&apikey=" +
+      apiKey
+  )
     .then((response) => response.json())
     .then((data) => {
       movieName = data["Title"];
