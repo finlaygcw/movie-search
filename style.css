@@ -92,6 +92,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color:red;
 }
 
 .result h1 {
