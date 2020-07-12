@@ -18,7 +18,7 @@ button.addEventListener("click", getMovieInfo);
 async function getMovieInfo() {
   results.innerHTML = "";
   const response = await fetch(
-    "http://www.omdbapi.com/?t=" + input.value + "&apikey=" + apiKey
+    "https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t=" + input.value + "&apikey=" + apiKey
   );
   const json = await response.json();
   console.log(json);
