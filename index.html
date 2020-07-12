@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="has-background-light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Movies Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+    <style>
+        .footer-text {
+            position: fixed;
+            bottom: 0px;
+            z-index: 10;
+            width:100%;
+        }
+    </style>
+  </head>
+  <body>
+    <section class="section has-background-info">
+      <div class="container">
+        <h1 class="title has-text-black">
+          Movies Search
+        </h1>
+        <p class="subtitle has-text-black">
+          Search for information about your favourite movies!
+        </p>
+      </div>
+      <div class="field is-grouped mt-4 mb-4">
+        <p class="control is-expanded">
+          <input class="input" type="text" placeholder="Enter movie name..." />
+        </p>
+        <p class="control">
+          <a class="button is-info has-background-black">
+            Search
+          </a>
+        </p>
+      </div>
+    </section>
+        <div class="section">
+          <div class="result"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-text has-background-info">
+      <div class="content has-text-centered has-text-black">
+        <p>Movie information provided by the <a href="">OMDb API</a>.</p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
